@@ -1,5 +1,6 @@
 package com.ex.modernloginsignup
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
@@ -33,5 +34,13 @@ class SignUpActivity : AppCompatActivity() {
                 }
             }
         }
+        signUpBinding.loginText.setOnClickListener {
+            startActivity(Intent(this,LogInActivity::class.java))
+        }
+    }
+
+    override fun onStop() {
+        super.onStop()
+        onBackPressed()
     }
 }

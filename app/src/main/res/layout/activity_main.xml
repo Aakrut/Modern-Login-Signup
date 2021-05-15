@@ -18,108 +18,115 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/form_background"
-        android:alpha="0.4"
+        android:backgroundTint="#FFF"
+        android:alpha="0.8"
         >
 
-        <TextView
-            android:id="@+id/login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="20dp"
-            android:text="Log In"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-           android:layout_marginStart="35dp"/>
 
-        <EditText
-            android:id="@+id/login_edit_text_email"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:textColorHint="@color/black"
-            android:hint="Email"
-            android:paddingLeft="20dp"
-            android:layout_below="@+id/login"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginTop="40dp"
-            android:background="@drawable/edit_text_drawable"
-            android:alpha="0.4"/>
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:text="Log In"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="35dp"/>
 
-        <EditText
-            android:id="@+id/login_edit_text_password"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:hint="Password"
-            android:paddingLeft="20dp"
-            android:textColorHint="@color/black"
-            android:layout_below="@+id/login_edit_text_email"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/edit_text_drawable"
-            android:alpha="0.4"/>
+            <EditText
+                android:id="@+id/login_edit_text_email"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColorHint="@color/black"
+                android:hint="Email"
+                android:paddingLeft="20dp"
+                android:textColor="@color/black"
+                android:inputType="textEmailAddress"
+                android:layout_below="@+id/login"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/edit_text_drawable"
+                android:alpha="0.4"/>
 
-        <TextView
-            android:id="@+id/fogot_password"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Fogot Password?"
-            android:layout_below="@id/login_edit_text_password"
-            android:textColor="#0093E9"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            android:layout_marginStart="24sp"
-            android:layout_marginTop="12dp"
-            />
+            <EditText
+                android:id="@+id/login_edit_text_password"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Password"
+                android:paddingLeft="20dp"
+                android:textColorHint="@color/black"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:layout_below="@+id/login_edit_text_email"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text_drawable"
+                android:alpha="0.4"/>
 
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button_login"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_below="@+id/fogot_password"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="21dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="19dp"
-            android:background="@drawable/button_drawable"
-            android:text="Log In"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="25sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/fogot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fogot Password?"
+                android:layout_below="@id/login_edit_text_password"
+                android:textColor="#0093E9"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginStart="24sp"
+                android:layout_marginTop="12dp"
+                />
 
 
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_login"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/fogot_password"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="19dp"
+                android:background="@drawable/button_drawable"
+                android:text="Log In"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/sign_up_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Already have An Account?"
-            android:textSize="18sp"
-            android:layout_marginStart="45dp"
-            android:layout_below="@id/button_login"
-            android:layout_marginTop="15dp"/>
 
-        <TextView
-            android:id="@+id/signup_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Log In"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="#0093E9"
-            android:layout_marginStart="5dp"
-            android:layout_below="@id/button_login"
-            android:layout_marginTop="15dp"
-            android:layout_toEndOf="@id/sign_up_text"/>
+
+            <TextView
+                android:id="@+id/sign_up_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have An Account?"
+                android:textSize="18sp"
+                android:layout_marginStart="45dp"
+                android:layout_below="@id/button_login"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/signup_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log In"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#0093E9"
+                android:layout_marginStart="5dp"
+                android:layout_below="@id/button_login"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/sign_up_text"/>
+
 
     </RelativeLayout>
 

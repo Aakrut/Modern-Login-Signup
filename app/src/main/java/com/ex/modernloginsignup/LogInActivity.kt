@@ -1,5 +1,6 @@
 package com.ex.modernloginsignup
 
+import android.content.Intent
 import android.graphics.drawable.AnimationDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -49,5 +50,14 @@ class LogInActivity : AppCompatActivity() {
         mainBinding.fogotPassword.setOnClickListener {
             Toast.makeText(this, "Forgot Password", Toast.LENGTH_SHORT).show()
         }
+
+        mainBinding.signupText.setOnClickListener{
+            startActivity(Intent(this,SignUpActivity::class.java))
+        }
+    }
+
+    override fun onStop() {
+        super.onStop()
+        onBackPressed()
     }
 }
